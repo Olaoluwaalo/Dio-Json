@@ -1,3 +1,4 @@
+import 'package:dio_json/screens/single_user_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,21 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: SingleUserScreen(),
     );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

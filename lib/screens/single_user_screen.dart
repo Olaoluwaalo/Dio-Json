@@ -63,16 +63,14 @@ class _SingleUserScreenState extends State<SingleUserScreen> {
       ),
       body: isLoading
           ? const CircularProgressIndicator()
-          : Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.network(user.avatar),
-                  Text(user.email),
-                  Text(user.lastName),
-                  Text(user.firstName),
-                ],
-              ),
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.network(user.avatar),
+                Text(user.email),
+                Text(user.lastName),
+                Text(user.firstName),
+              ],
             ),
     );
   }

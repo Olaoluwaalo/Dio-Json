@@ -11,5 +11,5 @@ class SingleUserModel {
 
   factory SingleUserModel.fromJson(Map<String, dynamic> json) =>
       _$SingleUserModelFromJson(json);
-  Map<String, dynamic> toJson() => _$SingleUserModelToJson(this);
+  Map<String, dynamic> toJson(data) => _$SingleUserModelToJson(this);
 }
